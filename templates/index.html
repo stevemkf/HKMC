@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>年金息率計算機</title>
+</head>
+<body>
+    <h1>輸入資料</h1>
+    <form method="POST" action="/submit">
+        幾多歲買 (60 to 85): <input type="number" name="current_age" min="60" max="85" required><br><br>
+        諗住有幾多歲命: <input type="number" name="expected_age" required><br><br>
+        男定女 ('m/f'): <input type="text" name="gender" required><br><br>
+        <input type="submit" value="計算">
+    </form>
+</body>
+</html>
