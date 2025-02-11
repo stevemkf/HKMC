@@ -9,7 +9,12 @@
     <form method="POST" action="/submit">
         幾多歲買 (60 to 85): <input type="number" name="current_age" min="60" max="85" required><br><br>
         諗住有幾多歲命: <input type="number" name="expected_age" required><br><br>
-        男定女 ('m/f'): <input type="text" name="gender" required><br><br>
+        男定女:
+        <select name="gender" required>
+            <option value="m">男</option>
+            <option value="f">女</option>
+        </select>
+        <br><br>
         <input type="submit" value="計算">
     </form>
 </body>
