@@ -20,13 +20,11 @@ def when_exhaust(capital: float, interest_rate: float, monthly_pay: float):
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def home():
     return render_template("getinputs.html")
 
-@app.route('/home')
-def red_home():
-    return redirect('/')
 
 @app.route('/submit', methods=['POST'])
 def submit():
